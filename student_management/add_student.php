@@ -6,7 +6,8 @@ $conn = new mysqli('localhost','root','','student_db');
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-if(isset($_POST['add'])) {
+if(isset($_POST['add'])) 
+{
 @$fname = $_POST['fname'];
 @$lname = $_POST['lname'];
 @$email = $_POST['email'];
